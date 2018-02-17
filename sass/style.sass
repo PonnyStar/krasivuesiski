@@ -1,0 +1,578 @@
+@import "reset"
+// @import "fonts"
+
+//============================   variables   ==============================
+
+$OP: "Open Sans", Sans-serf
+$OP-bold: "Open Sans Bold", Sans-serif
+$OP-light: "Open Sans Light", Sans-serif
+$OP-regular: "Open Sans Regular", Sans-serif
+$OP-semibold: "Open Sans SemiBold", Sans-serif
+
+$green: #3a9d40
+$bg-color: #fcfcfc
+$footer-green: #2a782d
+
+//============================   styles   ==============================
+html
+	font-family: 16px
+	min-width: 600px
+	max-width: 1920px
+	margin: 0 auto
+body
+	background-color: $bg-color
+	min-width: 600px
+	max-width: 1920px
+//============================   header   ==============================
+header
+	height: 103px
+	display: flex
+	align-items: center
+	border-bottom: 1px solid $green
+	.row
+		align-items: center
+.logoWrapper
+	display: flex
+	align-items: center
+	&_title
+		margin-left: 20px
+		font-family: $OP-regular
+.navigationWrapper
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-left: 90px
+.navigationWrapperMenu
+	display: flex
+	&_item
+		margin-right: 30px
+		a
+			font-family: $OP-regular
+			text-decoration: none
+			color: black
+			&:hover
+				color: $green
+.headerContacts
+	color: $green
+	text-align: left
+	display: flex
+	flex-direction: column
+	justify-content: center
+	font-family: $OP-semibold
+	align-items: flex-end
+.menuDisplay
+	display: none
+.menu_toggle
+	display: none
+//============================   firstScreen   ==============================
+.mainScreen
+	height: 1105px
+.firstScreen
+	background-image: url(../img/bg.jpg)
+	background-position: center -101px
+	width: 100%
+	height: 749px
+	background-repeat: no-repeat
+	border-bottom: 2px solid $green
+	padding-top: 135px
+	&_titles
+		padding-left: 30px
+		p
+			font-family: $OP-bold
+			font-size: calc(2rem - 6px)
+		h1
+			color: $green
+			font-family: $OP-light
+			font-size: 4.85rem
+			margin-top: 36px
+		h2
+			color: $green
+			font-family: $OP-semibold	
+			font-size: calc(2rem-6px)
+			margin-top: 40px
+.btnsWrap
+	margin-top: 60px
+	&_consultation
+		width: 270px
+		height: 60px
+		border: none
+		background-color: transparent
+		border: 2px solid $green
+		border-radius: 5px
+		font-family: $OP-semibold	
+		color: $green
+		font-size: calc(1rem + 2px)
+	&_write
+		width: 192px
+		height: 60px
+		border: none
+		background-color: $green
+		border: 2px solid $green
+		border-radius: 5px
+		font-family: $OP-semibold	
+		color: white
+		font-size: calc(1rem + 2px)
+		margin-left: 23px
+.firstScreenItem
+	box-sizing: border-box
+	height: 494px
+	width: 100%
+	background: $green
+	padding-top: 60px
+	margin-top: 110px
+	border-radius: 5px
+	text-align: center
+	color: white
+	padding-left: 30px
+	padding-right: 30px
+	&_title
+		font-family: $OP-semibold
+		font-size: calc(2rem - 2px)
+	&_description
+		font-family: $OP-light
+		margin-top: 65px
+		font-size: calc(2rem - 2px)
+	&_price
+		font-family: $OP-semibold
+		margin-top: 45px
+		font-size: calc(2rem - 2px)
+	.btnsWrap_consultation
+		border: 2px solid white
+		color: white
+		margin-top: 30px
+//============================   secondScreen   ==============================
+.sliderContainer
+	display: flex
+	align-items: center
+	flex-direction: column
+.sliderContainerTitles
+	margin-top: 40px
+	text-align: center
+	line-geight: 0.6rem
+	margin-bottom: 50px
+	p
+		font-size: calc(2rem - 11px)
+		font-family: $OP-regular	
+		span
+			font-family: $OP-bold
+.secondScreen
+	margin-top: 110px
+.secondScreenTitle
+	font-size: 3rem
+	font-family: $OP-light	
+	text-align: center
+.sliderRow
+	margin-top: 30px
+.slider
+	width: 78.7%
+	height: 100%
+	margin-top: 110px
+	img
+		width: 100%
+.sliderItem
+	width: 874px
+	heigth: 500px
+	background-color: red
+//============================   thirdScreen   ==============================
+
+.thirdScreen
+	margin-top: 110px
+.thirdScreenTitles
+	display: flex
+	justify-content: center
+	h4
+		font-family: $OP-light	
+		font-size: 3rem
+.imgRow
+	margin-top: 110px
+	display: flex
+	padding: 0px
+	margin-bottom: 110px
+	&_item
+		width: calc(100%/3)
+//============================   forthScreen   ==============================
+
+.forthScreen
+	h5
+		text-align: center
+		font-size: 3rem	
+		font-family: $OP-light	
+.companyRow
+	margin-top: 110px
+	&_item
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		p
+			font-size: calc(2rem - 12px)
+			font-family: $OP-regular	
+			margin-top: 30px
+			text-align: center
+			line-height: 1.6rem
+		span
+			font-family: $OP-bold	
+			font-size: calc(2rem - 9px)
+
+//============================   fifthScreen   ==============================
+
+.fifthScreen
+	margin-top: 110px
+	width: 100%
+	height: 558px
+	background-color: $green
+.fifthScreenTitle
+	margin-top: 100px
+	h6
+		color: white
+		font-family: $OP-regular
+		font-size: 1.95rem	
+		text-align: center
+.fifthScreenDescription
+	margin-top: 50px
+	p
+		text-align: center
+		color: white
+		font-family: $OP-regular
+.fifthScreenForm
+	margin-top: 80px
+.fifthScreenFormWrapper
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	&_input
+		width: 300px
+		height: 60px
+		box-sizing: border-box
+		border: 2px solid #e5e5e5
+		border-radius: 5px
+		padding-left: 26px
+		line-height: 100%
+		color: #7f7f7f
+		font-family: $OP-regular
+		font-size: calc(1rem + 2px)
+		margin-left: 24px
+		&:first-child
+			margin-left: 0px
+.checkWrapper
+	height: 60px
+	margin-left: 30px
+	display: flex
+	align-items: flex-end
+	input[type="checkbox"]
+		display:none           
+	input[type="checkbox"] + label
+		font: 0.6rem bold
+		color: white
+		cursor: pointer
+		font-family: $OP-regular
+	input[type="checkbox"] + label::before
+		content: ""
+		display: inline-block
+		height: 18px
+		width: 18px
+		margin: 0 5px 0 0
+		background-color: #2b7630
+		background-repeat: no-repeat
+	input[type="checkbox"] + label::before 
+		width: 15px
+		height: 15px
+		// content: url("https://cdn4.iconfinder.com/data/icons/pictograms-2/512/512-14-16.png")
+	input[type="checkbox"]:checked + label::before 
+    	background-color: #2b7630
+    	content: url("https://cdn4.iconfinder.com/data/icons/pictograms-2/512/512-14-16.png")
+.checkWrapper_checkboxLabel
+	color: white
+	width: 130px
+	font-size: calc(1rem - 4px)
+	font-family: $OP-regular
+.fifthScreenFormWrapper_button
+	margin-top: 45px
+	height: 56px
+	border: 2px solid white
+	text-align: center
+	color: white
+	width: 197px
+	background-color: transparent
+	border-radius: 5px
+
+//============================   faces   ==============================
+.faces
+	width: 100%
+	img
+		width: 100%
+
+.sixthScreen
+	margin-top: 110px
+	h6
+		color: $green
+		text-align: center
+		font-family: $OP-light
+		font-size: 2rem
+		margin-bottom: 50px
+.licenses
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-around
+	&_item 
+		img
+			width: 110px
+			height: 160px
+.licenses_item-full
+	img
+		width: 370px
+		height: 520px
+.sixthScreenDescription
+	p
+		margin-top: 40px
+		font-family: $OP-regular
+		font-size: 1.4rem
+		&:first-child
+			margin-top: 0px
+			font-family: $OP-bold
+			font-size: calc(2rem - 10px)
+.line
+	border: 1px solid #e5e5e5
+	margin-top: 30px
+
+//============================   circles   ==============================
+
+.circles
+	margin-top: 84px
+	.circle
+		width: 164px
+		height: 164px
+		border: 2px solid $green
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 2rem
+		font-family: $OP-light
+		color: $green
+	&_item
+		text-align: center
+		p
+			margin-top: 45px
+			font-family: $OP-regular
+			font-size: calc(1rem + 2px)
+#circle_item-nine
+	font-size: 4rem
+
+//============================   feedbacks   ==============================
+
+.feedbacksTitle
+	margin-top: 130px
+	h6
+		font-size: 3rem
+		font-family: $OP-light
+		text-align: center
+.feedbacksWrapper
+	margin-top: 114px
+	&_item
+		margin-top: 100px
+		display: flex
+		align-items: center
+		img
+			margin-right: 30px
+.feedbacksWrapper_item:first-child
+	margin-top: 0px
+.feedbacksWrapperTitles
+	p:first-child
+		font-family: $OP-bold
+		font-size: 1.5rem
+		margin-bottom: 30px
+	p
+		font-family: $OP-light
+		font-size: 1.2rem
+
+//============================   last   ==============================
+
+.last
+	margin-top: 100px
+	width: 100%
+	height: 620px
+	background-color: $green
+	padding-top: 100px
+	text-align: center
+	color: white
+	.lastAdress
+		h6
+			font-family: $OP-light
+			font-size: 4rem	
+	.line 
+		margin-top: 50px	
+		margin-bottom: 140px	
+	.lastContacts
+		p
+			font-family: $OP-light
+			font-size: 2rem	
+			&:last-child
+				font-family: $OP-regular
+				font-size: 1.5rem
+				margin-top: 30px
+				margin-bottom: 145px
+
+//============================   footer   ==============================
+
+footer
+	height: 103px
+	display: flex
+	align-items: center
+	border-bottom: 1px solid $green
+.logoWrapper
+	display: flex
+	align-items: center
+	&_title
+		margin-left: 20px
+		font-family: $OP-regular
+.footerNavigationWrapper
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-left: 90px
+.navigationWrapperMenu
+	display: flex
+	&_item
+		margin-right: 30px
+		a
+			font-family: $OP-regular
+			text-decoration: none
+			color: black
+			&:hover
+				color: $green
+
+//============================   Media   ==============================
+
+@media only screen and (max-width: 1200px) 
+	header 
+		height: 100%
+		padding-top: 30px
+		padding-bottom: 30px
+	.navigationWrapper
+		display: none
+		width: 100%
+	.menu_toggle-active
+		display: block
+		width: 100%
+		margin: 0 auto
+		transition: 2s
+		margin-top: 50px
+		.navigationWrapperMenu
+			width: 100%
+			display: block
+			text-align: center
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			li
+				margin-top: 10px
+	.menuDisplay
+		display: block
+		width: 100px
+		height: 50px
+		transition: 2s
+		button
+			background-color: transparent
+			border: none
+			text-align: center
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 50px
+			height: 50px
+			img
+				display: block
+				width: 40px
+				height: 40px
+	.menu-toggle
+		transition: 2s
+	.mainScreen
+		height: 2305px
+	.btnsWrap_write
+		margin-left: 0px
+		margin-top: 30px
+	.secondScreen
+		margin-top: 160px
+	.imgRow
+		// height: 25vw
+		height: 34vw
+	.forthScreen
+		margin-top: 170px
+	.companyRow_item
+		&:nth-child(3)
+			margin-top: 50px
+		&:nth-child(4)
+			margin-top: 50px
+	.fifthScreenFormWrapper
+		display: flex
+		flex-direction: column
+		align-items: center
+		.fifthScreenFormWrapper_input
+			width: 300px
+			&:nth-child(2)
+				margin-left: 0px
+				margin-top: 20px
+			&:nth-child(3)
+				margin-left: 0px
+				margin-top: 20px
+		.checkWrapper
+			margin-left: 0px
+	.fifthScreen
+		height: 700px
+	.sixthScreenDescription
+		p
+			font-size: 1rem
+	.icensesWrap
+		display: flex
+		justify-content: center
+		.licenses
+			width: 400px
+	.sixthScreenDescription
+		margin-top: 50px
+	.circles
+		padding-left: 15%
+	#circle_item-nine
+		display: flex
+		// justify-content: center
+		align-items: center
+		margin-top: 50px
+		p
+			margin-top: 0px
+			margin-left: 20px
+	.circles_item
+		display: flex
+		align-items: center
+		margin-top: 50px
+		p
+			margin-top: 0px
+			margin-left: 20px
+	.footerNavigationWrapper
+		display: none
+	.sliderItem 
+		widrh: 400px
+	.slick-next
+		right: -20%
+	.slick-prev
+		left: -20%
+@media only screen and (max-width: 990px) 
+	.slick-next
+		right: -15%
+	.slick-prev
+		left: -15%
+		z-index: 2
+@media only screen and (max-width: 900px) 
+	.companyRow_item
+			&:nth-child(2)
+				margin-top: 50px
+@media only screen and (max-width: 760px) 
+	#circle_item-nine
+		display: flex
+		width: 250px
+	.firstScreen_titles
+		h1
+			font-size: 3rem
+@media only screen and (max-width: 580px) 
+	#circle_item-nine
+		display: flex
+		width: 210px

@@ -1,0 +1,1 @@
+[2018-02-16 22:27:52] layer "+7(499)495-10-91 zapis@plastika.expert": Expected Either a default asset specification or a layer asset specification but "+" found.
